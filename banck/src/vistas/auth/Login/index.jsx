@@ -12,7 +12,7 @@ import colors from "../../../utils/colors";
 import { useTheme } from "@emotion/react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useValidate } from "../../../Hooks/useValidate.js";
+// import { useValidate } from "../../../Hooks/useValidate.jsx";
 import InputPassaword from "../../../components/InputPassaword.jsx";
 import axios from "axios"
 const apiBaseUrl = "http://127.0.0.1:5173";
@@ -102,7 +102,7 @@ const Login = () => {
           color={colors.white}
         >
           {!md ? (
-            "Welcome"
+            "Login"
           ) : (
             <>
               <Typography
@@ -113,7 +113,7 @@ const Login = () => {
                 marginLeft={1}
                 marginRight={0.2}
               >
-                Aqui podras iniciar sesion
+                Inicia sesion
               </Typography>
             </>
           )}
@@ -150,7 +150,7 @@ const Login = () => {
               color: "white",
             }}
           >
-            Contraseña
+            Password
           </FormLabel>
           <InputPassaword
             name="passaword"
